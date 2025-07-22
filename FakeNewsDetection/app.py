@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 
 st.title('📰 Fake News Detection using Logistic Regression')
 
-df = pd.read_csv('Fake_Real_Data.csv')
+df = pd.read_csv('FakeNewsDetection/Fake_Real_Data.csv')
 df.dropna(inplace=True)
 
 # Encode labels
