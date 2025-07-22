@@ -24,10 +24,10 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-df['text'] = df['text'].apply(clean_text)
+df['Text'] = df['Text'].apply(clean_text)
 
 # Split data
-X = df['text']
+X = df['Text']
 y = df['label']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
