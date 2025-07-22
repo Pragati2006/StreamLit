@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 
 st.title('📰 Fake News Detection using Logistic Regression')
 
-df = pd.read_csv('news.csv')
+df = pd.read_csv('Fake_Real_Data.csv')
 df.dropna(inplace=True)
 
 # Encode labels
@@ -51,3 +51,4 @@ if st.button('Analyze'):
         st.error('🚨 The news is predicted as FAKE.')
     else:
         st.success('✅ The news is predicted as REAL.')
+
